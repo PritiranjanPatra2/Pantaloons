@@ -38,7 +38,20 @@
 .heading {
     color: black;
 }
-
+.search-form {
+    position: relative;
+    display: inline-block;
+}
+.search-input {
+    padding-right: 30px; /* Space for the icon */
+}
+.search-icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* So that the icon doesn't interfere with input */
+}
 
 /* top mav bar section end   */
 /* main nav bar start  */
@@ -107,7 +120,8 @@ main{
     
     width: 100%;
     height: auto;
-    overflow-x: auto;
+    overflow-x: hidden;
+    position: relative;
 }
 main .img{
     width: 100%;
@@ -115,7 +129,17 @@ main .img{
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    white-space: nowrap;
+  animation: scroll 10s linear infinite; 
 }
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 main .img img{
     width: 100%;
     height: 100%;
@@ -207,6 +231,15 @@ main p a{
 .style-finder{
     padding: 2rem 15vw;
 }
+.style-finder .img{
+    width: 100%;
+    height: auto;
+}
+.style-finder .img img{
+    width: 100%;
+    height: auto;
+}
+
 
 .fresh-fits{
     padding: 2rem 25vh;
@@ -226,6 +259,9 @@ main p a{
 /* shop-the-look */
 .shop-the-look{
     padding: 2rem 15vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
 .shop-the-look .shop-heading{
@@ -240,9 +276,10 @@ main p a{
 }
 .shop-the-look .shop-heading .variation span{
     padding:0.3rem 1rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: aliceblue;
     border-radius:2rem;
+    box-shadow: 1px 2px 3px var(--black);
 }
 
 
