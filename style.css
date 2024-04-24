@@ -193,6 +193,10 @@ main p a{
     display: flex;
     flex-direction: column;
 }
+div.bargain{
+    font-weight: 600;
+    font-size: 1rem;
+}
 .img-des .bargain{
     display: flex;
     justify-content: space-around;
@@ -213,6 +217,7 @@ main p a{
 .new-arrival .new-arr-con .new-card{
     width: 25%;
     height: auto;
+    flex-shrink: 0;
 }
 .new-card .new-img{
     width: 100%;
@@ -403,12 +408,27 @@ main p a{
     flex-direction: column;
     row-gap: 2rem;
     text-align: center;
+    width: 50%;
+    flex-shrink: 0;
 }
 .gift-card-con .right{
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    flex-shrink: 0;
+    /* border: 2px solid red; */
+}
+.gift-card-con .right .img{
+width: 100%;
+height: auto;
+/* border: 2px solid red; */
+
+}
+.gift-card-con .right img{
+    width: 100%;
+    height: auto;
 }
 
 
@@ -472,4 +492,78 @@ main p a{
 .store .app img{
     height: 5rem;
     width: 6rem;
+}
+
+
+
+@media screen and (max-width:873px) {
+    html{
+        font-size: 13px;
+    }
+    .inspirations .insp-con{
+        display: flex;
+        column-gap: 2rem;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .insp-con .img-box{
+        width: 29%;
+        height: auto;
+        /* border: 1px solid red; */
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        animation: scrollx 5s linear infinite;
+        
+    }
+}
+@media screen and (max-width:765px){
+html{
+    font-size: 10px;
+}
+.deal-con{
+    overflow-x: hidden;
+    position: relative;
+    /* border: 2px solid red; */
+    
+}
+.deal-card{
+    width: 33%;
+    flex-shrink: 0;
+    height: auto;
+    /* border: 3px solid white; */
+    background-color: white;
+    padding: .3rem;
+    white-space: nowrap;
+    animation: scrollx 5s linear infinite;
+}
+.new-arrival .new-arr-con{
+    overflow-x: hidden;
+    position: relative;
+}
+.new-arrival .new-arr-con .new-card{
+    width: 30%;
+    height: auto;
+    white-space: nowrap;
+    animation: scrollx 5s linear infinite;
+
+}
+@keyframes scrollx {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+.shop-the-look .shop-heading .variation span{
+    /* padding:0 1rem; */
+    padding: .7rem;
+    /* border: 2px solid red; */
+    background-color: aliceblue;
+    border-radius:2rem;
+    box-shadow: 1px 2px 3px var(--black);
+}
+
 }
