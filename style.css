@@ -878,4 +878,10 @@ footer{
     padding: 0.5rem;
     width: 3.7rem
 }
+
+@media screen and (max-width:1319px) {
+    body > div.webnews-latter > div.center-section > form > input[type=text]{
+        display: none;
+    }
+}
 /* payments-section */
