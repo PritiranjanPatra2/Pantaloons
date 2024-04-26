@@ -3,10 +3,247 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
+/* navbar00 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body {
   font-family: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* top mav bar section start */
+/* div .top,nav{
+  overflow: hidden;
+} */
+.top {
+  position: sticky;
+  z-index: 6;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #FEF3BD;
+  color: #A59F7B;
+  font-size: 0.8rem;
+}
+
+.top-header-left ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  padding: 0.3rem;
+  color: #0009;
+}
+
+.top-header-right ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  padding: 0.3rem;
+}
+.top-header-left ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.heading {
+  color: black;
+}
+
+
+/* top mav bar section end   */
+/* main nav bar start  */
+.nav-bar {
+  display: flex;
+  position: sticky;
+  top:1rem;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #00B0B5;
+  gap: 2rem;
+  color: #FFFFFF;
+  /* padding: 0.5rem; */
+}
+
+.nav-bar .nav-left img {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+
+  width: 160px;
+}
+
+.nav-bar .nav-center>ul {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 3.5rem;
+  padding: 1rem;
+
+}
+/* ************************** */
+
+.lists
+{
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+ opacity: 0;
+ position: absolute;
+ top: 30px;
+ visibility: hidden;
+ z-index: 1;
+ transition: all 0.5s ease-in-out;
+}
+
+li:hover .lists
+{
+ background-color:white;
+ opacity: 0.8;
+ top:60px;
+ visibility: visible;
+  color: black;
+  z-index: 10;
+ 
+}
+.nav-center .lists .list1 ul{
+  list-style: none;
+
+}
+.nav-center .lists .list1 ul li:hover{
+  border: none;
+  cursor: pointer;
+  color: #00B0B5;
+}
+.nav-center .lists .list1 h4{
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+
+
+
+/* ****************************** */
+.nav-bar .nav-center>ul li a
+{
+  color: white;
+  text-decoration: none;
+}
+
+.nav-bar .nav-center>ul li:hover{
+  border-bottom: 2px solid yellow;
+}
+
+.nav-bar .nav-right {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.nav-bar .nav-right input {
+
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  height: 2rem;
+  width: 220px;
+  padding: 0.5rem;
+  border-radius: .5rem;
+
+}
+
+.nav-bar .nav-right form input::placeholder {
+  color: white;
+}
+@media only screen and (max-width: 1507px) {
+  div.top, nav {
+    overflow: hidden;
+  }
+}
+
+/* @media only screen and (max-width: 1507px) {
+  div .top,nav{
+      overflow: hidden;
+  }
+} */
+
+/* @media only screen and (max-width: 600px) {
+  .nav-bar {
+
+      width: 100vw;
+      height: 15vh;
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+
+      font-size:smaller;
+      flex-direction:column;
+      overflow-x: scroll;
+
+      
+
+  }
+} */
+
+/* main nav bar end  */
+/* ******************************************************************** */
+.sliding-button {
+  position: relative;
+  margin: 0.2rem;
+  width: 40px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+/* The sliding button itself */
+.sliding-button input {
+  display: none;
+}
+
+/* The sliding button's label (the visible part) */
+.sliding-button label {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 50%;
+  height: 100%;
+  background-color: #ACB4B0;
+  transition: transform 0.3s ease;
+}
+
+.sliding-button input[type="checkbox"]:checked+label {
+  transform: translateX(100%);
 }
 
 /* Header Styles */
@@ -113,7 +350,7 @@ header {
 }
 
 .summer-products img {
-  max-width: 1200px;
+  max-width: 100%;
   height: auto;
 }
 
