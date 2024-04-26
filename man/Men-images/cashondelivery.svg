@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="16" viewBox="0 0 63 16">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#000">
+            <g>
+                <g>
+                    <g>
+                        <text font-family="ProximaNova-Bold, Proxima Nova" font-size="8" font-weight="bold" letter-spacing="1" transform="translate(-1366 -1559) translate(0 996) translate(1158 550) translate(208.85 13)">
+                            <tspan x="14.151" y="8">CASH ON </tspan> <tspan x="14.151" y="16">DELIVERY</tspan>
+                        </text>
+                        <path fill-rule="nonzero" d="M7.408 13L3.952 8.648c-.352-.448-.592-.736-.72-.832.848-.192 1.52-.544 2.032-1.056.352-.384.592-.864.688-1.408h1.664l.352-1.056H5.984c-.064-.656-.272-1.216-.608-1.664H7.6l.352-1.056h-7.6L0 2.632h1.712c.784 0 1.376.16 1.792.512.32.272.512.656.592 1.152H.384L.032 5.352h4.032c-.096.4-.32.72-.656.96-.496.352-1.248.528-2.256.528H.16v1.248c.352 0 .704.112 1.024.336.288.192.56.448.816.8L4.864 13h2.544z" transform="translate(-1366 -1559) translate(0 996) translate(1158 550) translate(208.85 13)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
