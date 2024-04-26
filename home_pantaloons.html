@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Page</title>
+<link rel="stylesheet"href="home_pantaloons.css">
+</head>
+<header>
+    <h1>Pantloons</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Beauty</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="search">
+       <button class="btn-search">search</button>
+    </div>
+  </header>
+<body>
+    <section class="home_section">
+        <h1>HOME</h1>
+    </section>
+    <section>
+    <div class="main-container">
+    
+        <div class="left-nav">
+        <h2>Filter By</h2>
+        <div class="scroll">
+      <ul>
+       
+        <li onclick="toggleSubmenu('submenu1')"><b>BUNDELS</b></li>
+        <ul id="submenu1" style="display: none;">
+          <li>
+
+            <input type="radio" class="radio">
+            <label for="radio">pack 2 of (1)</label><br>
+            
+          </li>
+          
+        </ul>
+      
+        <li onclick="toggleSubmenu('submenu2')"><b>DEALS</b></li>
+        <ul id="submenu2" style="display: none;">
+          <li >
+            <input type="radio" class="radio" name="robn">
+            <label for="radio" name="robn">Clearance (35)</label><br>
+             <input type="radio" class="radio" name="robn">
+            <label for="radio" name="robn">First Time on Sale(4)</label><br>
+            <input type="radio" class="radio" name="robn">
+            <label for="radio" name="robn">Rock Bottom Deal (6)</label><br>
+        </li>
+        </ul>
+        <li onclick="toggleSubmenu('submenu3')"><b>PRODUCT TYPE</b></li>
+        <ul id="submenu3" style="display: none;">
+          <li>
+            <input type="radio" class="radio" name="dio">
+            <label for="radio" name="dio">Bath Mart (9)</label><br>
+          
+            
+            <input type="radio" class="radio" name="dio">
+            <label for="radio" name="dio">Bath Towels (9)</label><br>
+        
+           
+            <input type="radio" class="radio" name="dio">
+            <label for="radio"  name="dio">Bed Covers (2)</label><br>
+       
+            <input type="radio" class="radio" name="dio">
+            <label for="radio" name="dio">Bedsheets Sets (99)</label><br>
+        
+            <input type="radio" class="radio" name="dio">
+            <label for="radio" name="dio">Blankets (14)</label><br>
+        
+            <input type="radio" class="radio" name="dio">
+            <label for="radio" name="dio">Cake Stands(2)</label><br>
+       <input type="radio" class="radio" name="dio">
+                <label for="radio" name="dio">Cannisters(1)</label><br>
+             
+            
+                <input type="radio" class="radio" name="dio">
+                <label for="radio" name="dio">Clocks(1)</label><br>
+           
+                <input type="radio" class="radio" name="dio">
+                <label for="radio" name="dio">Copper Bottels(12)</label><br>
+            
+                <input type="radio" class="radio" name="dio">
+                <label for="radio" name="dio">Cushion Covers(54)</label><br>
+            </li>
+
+        </ul>
+        <li onclick="toggleSubmenu('submenu4')"><b>BRAND</b></li>
+        <ul id="submenu4" style="display: none;">
+            <li>
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Anaqa(59)</label><br>
+           
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">LIVING SCAPES(283)</label><br>
+            </li>
+            </ul>
+            <li onclick="toggleSubmenu('submenu5')"><b>CATEGORY</b></li>
+            <ul id="submenu5" style="display: none;">
+              <li>
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Bath Mart (9)</label><br>
+
+              
+                
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Bath Towels (9)</label><br>
+            
+                
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Bed Covers (2)</label><br>
+            
+                <input type="radio" class="radio" anme="rbn">
+                <label for="radio" name="rbn">Bedsheets Sets (99)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Blankets (14)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">Cake Stands(2)</label><br>
+            
+                 <input type="radio" class="radio" name="rbn">
+                 <label for="radio" name="rbn">Cannisters(1)</label><br>
+                
+                    <input type="radio" class="radio" anme="rbn">
+                    <label for="radio" name="rbn">Clocks(1)</label><br>
+                
+                    <input type="radio" class="radio" name="rbn">
+                    <label for="radio" name="rbn">Copper Bottels(12)</label><br>
+                
+                    <input type="radio" class="radio" name="rbn">
+                    <label for="radio" name="rbn">Cushion Covers(54)</label><br>
+                </li>
+    
+            </ul>
+        <li onclick="toggleSubmenu('submenu6')"><b>FIT</b></li>
+        <ul id="submenu6" style="display: none;">
+            <li>
+                <input type="radio" class="radio">
+                <label for="radio">Regular Fit(3)</label>
+            </li>
+            
+        </ul>
+        <li onclick="toggleSubmenu('submenu7')"><b>DISCOUNT</b></li>
+        <ul id="submenu7" style="display: none;">
+            <li>
+                <input type="radio" class="radio" nmae="rbn">
+                <label for="radio" name="rbn">0%(85)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">0-10(14)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">10-20(57)</label><br>
+           
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">20-30(81)</label><br>
+           
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" na,e="rbn">30-40(41)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">40-50(16)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">50-60(46)</label><br>
+            
+                <input type="radio" class="radio" name="rbn">
+                <label for="radio" name="rbn">60-70(2)</label><br>
+            </li>
+        </ul>
+        <li onclick="toggleSubmenu('submenu8')"><b>SIZES</b></li>
+        <ul id="submenu8" style="display: none;">
+            <li>
+                <input  type="button" class="button" placeholder="Onesize">
+                <label for="button"></label>
+            </li>
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="Queen">
+            </li>
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="Single">
+            </li>
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="King">
+            </li>
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="Double-kin">
+            </li>
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="Double">
+            </li>
+        </ul>
+        <li onclick="toggleSubmenu('submenu9')"><b>PRICE</b></li>
+        <ul id="submenu9" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul>
+            <li onclick="toggleSubmenu('submenu10')"><b>COLOR</b></li>
+            <ul id="submenu10" style="display: none;">
+                <li><label for="button"></label>
+                    <input type="button" class="button" placeholder="APPLY">
+                </li>
+                </ul>
+                <li onclick="toggleSubmenu('submenu11')"><b>OCCASION</b></li>
+        <ul id="submenu11" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul>
+            <li onclick="toggleSubmenu('submenu12')"><b>PATTERN AND PRINT</b></li>
+        <ul id="submenu12" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul>
+            <li onclick="toggleSubmenu('submenu13')"><b>WASH CARE</b></li>
+        <ul id="submenu13" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul> 
+            <li onclick="toggleSubmenu('submenu14')"><b>FABERIC TYPE</b></li>
+        <ul id="submenu14" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul>
+            <li onclick="toggleSubmenu('submenu15')"><b>DELIVERY TIME</b></li>
+        <ul id="submenu15" style="display: none;">
+            <li><label for="button"></label>
+                <input type="button" class="button" placeholder="APPLY">
+            </li>
+            </ul>
+      </ul>
+    </div>
+    </div>
+    <div class="right-nav">
+      <div class="search-container">
+        <p><b>SORT BY</b></p>
+        <select name="search-input" id="sort">
+            <option value="popular">popular</option>
+            <option value="Best selling">Best Selling</option>
+            <option value="Latest">Latest</option>
+            <option value="Latest">Price-High to Low</option>
+            <option value="Latest">Price-Low to High</option>
+            <option value="Latest">Discount</option>
+            </select>
+      </div>
+   
+      <div class="product-grid">
+        <div class="card">
+          <a href="https://www.pantaloons.com/p/yellow-bath-towel-743056.html"><img src="https://imagescdn.pantaloons.com/img/app/product/7/743056-8353927.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 1"></a>
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>Textured cotton Bath Towel<br></h3>
+            <p class="price">$45</p>
+            <div class="view">QUICK VIEW</div>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/9/996065-13304403.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 2">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>white Printed chini Mog home...</h3>
+            <p class="price">$45</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/9/996061-13304395.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 3">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>white printed chini mog home..</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/880511-10585065.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 4">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>Printed cotton percale bedsheets</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/732511-8153007.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 5">
+          <div class="card-info">
+            <h3>ANAQA<br>Printed Cotton Bed Sheet sets</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/870061-10396831.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 6">
+          <div class="card-info">
+            <h3>LIVING SCRAPES<br>Textures polyster bath mat</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/866031-10262981.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 7">
+          <div class="card-info">
+            <h3>LIVING SCAPES <br>Printed cotton percale bed sheet</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/743055-8353922.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 8">
+          <div class="card-info">
+            <h3>LIVING SCRAPES<br>Textured cotton bath towel</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/732509-8152997.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>ANAQA<br>printed cotton bed sheet set</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/9/975350-12840002.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCRAPES<br>Black decore home bottle </h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/9/975348-12839990.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCRAPES<br>white decore bottel home</h3>
+            <p class="price">$25.99 20% OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/6/686170-7282773.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>pink bath mart </h3>
+            <p class="price">$25.99 55% OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/887812-10736748.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>blue flowers decorated bath tub mart</h3>
+            <p class="price">$25.99 15% OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/782122-9072317.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>Gold Patterns Planter</h3>
+            <p class="price">$25.99 275 OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/874085-10427607.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>Printed Tea Cups</h3>
+            <p class="price">$25.99</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/736640-8227356.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product 9">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br> gold solidvotie</h3>
+            <p class="price">$25.99 20% OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/736620-8227474.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product ">
+          <div class="card-info">
+            <h3>LIVING SCPAES<br>printed cotton cushion</h3>
+            <p class="price">$25.99 30% OFF</p>
+          </div>
+        </div>
+       
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/7/700649-7553669.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400" alt="Product ">
+          <div class="card-info">
+            <h3>LIVING SCAPES<br>printed cotton canva</h3>
+            <p class="price">$25.99 30% OFF</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="https://imagescdn.pantaloons.com/img/app/product/8/869557-10347657.jpg?q=75&auto=format&w=250&h=400?q=75&auto=format&w=250&h=400"alt="product">
+          <div class="card-info">
+            <h3>LIVING SCPAES <br>Pattern polyster bath mart</h3>
+            <p class="price">$25.99 22% OFF</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+  <script>
+    function toggleSubmenu(id) {
+      const submenu = document.getElementById(id);
+      if (submenu.style.display === 'none') {
+        submenu.style.display = 'block';
+      } else {
+        submenu.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>WOMEN</h3>
+        <ul>
+          <li><a href="#">Westernwear</a></li>
+          <li><a href="#">Ethnicwear</a></li>
+          <li><a href="#">Sports & Activewear</a></li>
+          <li><a href="#">Sleepwear & Lingerie</a></li>
+          <li><a href="#">Bags, Wallets & Clutches</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>MEN</h3>
+        <ul>
+          <li><a href="#">Top Wear</a></li>
+          <li><a href="#">Bottom Wear</a></li>
+          <li><a href="#">Ethnic Wear</a></li>
+          <li><a href="#">Accessories</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>KIDS</h3>
+        <ul>
+          <li><a href="#">Boys Topwear</a></li>
+          <li><a href="#">Girls Topwear</a></li>
+          <li><a href="#">Baby Topwear</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>HOME</h3>
+        <ul>
+          <li><a href="#">Bath</a></li>
+          <li><a href="#">Bed</a></li>
+          <li><a href="#">Decor</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>BEAUTY</h3>
+        <ul>
+          <li><a href="#">Makeup</a></li>
+          <li><a href="#">Mens Fragrances</a></li>
+          <li><a href="#">Womens Fragrances</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>BRANDS</h3>
+        <ul>
+          <li><a href="#">Shop By Brand</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>ABOUT</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Payment Options</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>CUSTOMER</h3>
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Customer Support</a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
