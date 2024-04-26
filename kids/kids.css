@@ -1047,3 +1047,285 @@ a {
 .kids-hover::-webkit-scrollbar-thumb {
   background: #a8a8a8;
 }
+
+/****************************/
+
+.webnews-latter {
+  max-width: 1090px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  gap: 1rem;
+}
+.webnews-latter h5 {
+  font-family: "MyFont", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+.webnews-latter .center-section form input {
+  width: 350px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+.webnews-latter .center-section form input::placeholder {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+.webnews-latter form {
+  position: relative;
+}
+.webnews-latter form label {
+  color: #00b0b5;
+  font-family: "MyFont", sans-serif;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 10px;
+  bottom: 25%;
+  transition: 0.1s linear;
+  cursor: pointer;
+}
+.webnews-latter form label:hover {
+  color: black;
+}
+.left-most-section {
+  display: flex;
+  gap: 20px;
+}
+.webnews-latter .right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.webnews-latter .right-section span a i {
+  color: black;
+}
+
+@media screen and (max-width: 1130px) {
+  .webnews-latter {
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 678px) {
+  .webnews-latter .left-most-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* webnews-latter */
+/* mui-container-root */
+.mui-container-root {
+  width: 100%;
+  background-color: #d2fdff;
+}
+.mui-container-root-inside {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.mui-container-root img {
+  width: 40 px;
+  padding-bottom: 2rem;
+}
+.mui-container-root span p {
+  font-size: 0.8rem;
+}
+.mui-container-root h5 {
+  font-family: "MyFont", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 1.1px;
+  font-weight: 600;
+}
+.mui-container-root span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mui-container-root-inside .first h5 {
+  position: relative;
+  bottom: 7px;
+}
+@media screen and (max-width: 750px) {
+  .mui-container-root-inside span {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .mui-container-root-inside {
+    flex-wrap: wrap;
+  }
+  .mui-container-root-inside span {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .mui-container-root-inside {
+    flex-wrap: wrap;
+  }
+  .mui-container-root-inside span {
+    width: 115px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+/* mui-container-root */
+
+/* persion-catgory */
+.persion-catgory {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 40px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.persion-catgory ul {
+  font-size: 0.65rem;
+  list-style: none;
+  line-height: 1rem;
+  letter-spacing: 0.2px;
+}
+.persion-catgory a {
+  font-family: "MyFont", sans-serif;
+}
+.persion-catgory h6 {
+  font-size: 0.7rem;
+  padding-left: 0;
+  letter-spacing: 1.4px;
+}
+footer {
+  background-color: #f1ffff;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 970px) {
+  .persion-catgory {
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+  }
+  .persion-catgory ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    line-height: 0.5rem;
+    font-size: 0.7 rem;
+  }
+  .persion-catgory h6 {
+    margin-bottom: 8px;
+    margin-top: 20px;
+    letter-spacing: 1.6px;
+    font-size: 0.75rem;
+  }
+}
+/* ***************** */
+.app-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1ffff;
+  flex-wrap: wrap;
+}
+.app-section h4 {
+  font-size: 0.7rem;
+  font-family: "MyFont", sans-serif;
+  letter-spacing: 1.2px;
+}
+.app-section.app-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.app-section .app-img img {
+  width: 8rem;
+  padding: 0.3rem;
+}
+footer hr {
+  border-top: 1px solid #00b0b5;
+}
+/* persion-catgory */
+/* payments-section */
+.payments-section-container {
+  background-color: #f1ffff;
+}
+.payments-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1080px;
+
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+.payments-section .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+  font-family: "MyFont", sans-serif;
+  font-size: 0.7rem;
+}
+.payments-section .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+  font-family: "MyFont", sans-serif;
+  font-size: 0.7rem;
+}
+.payments-section .right {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+  gap: 1rem;
+}
+.payments-section .right img {
+  padding: 0.5rem;
+  width: 3.7rem;
+}
+@media screen and (max-width: 950px) {
+  .payments-section {
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+  }
+  .payments-section .right {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .payments-section {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .payments-section .right img {
+    width: 55px;
+  }
+}
