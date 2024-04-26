@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* top mav bar section start */
+.top {
+    position: sticky;
+    z-index: 6;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #FEF3BD;
+    color: #A59F7B;
+    font-size: 0.8rem;
+}
+
+.top-header-left ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    padding: 0.3rem;
+    color: #0009;
+}
+
+.top-header-right ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+.top-header-left ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    color: black;
+}
+
+
+/* top mav bar section end   */
+/* main nav bar section css  start  */  
+.nav-bar {
+    display: flex;
+    position: sticky;
+    top: 1rem;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #00B0B5;
+    gap: 2rem;
+    color: #FFFFFF;
+    /* padding: 0.5rem; */
+}
+
+.nav-bar .nav-left img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+
+    width: 160px;
+}
+
+.nav-bar .nav-center>ul {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 3.5rem;
+    padding: 1rem;
+
+}
+
+.nav-bar .nav-center>ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .nav-center>ul li:hover{
+    border-bottom: 2px solid yellow;
+}
+
+.nav-bar .nav-right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.nav-bar .nav-right input {
+
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    height: 2rem;
+    width: 220px;
+    padding: 0.5rem;
+    border-radius: .5rem;
+
+}
+.nav-bar .nav-right span a i{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar .nav-right form input::placeholder {
+    color: white;
+}
+
+/* main nav bar section css  end  */
+@media (max-width: 767px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+    }
+  
+    .nav-bar .nav-left img {
+      width: 120px;
+    }
+  
+    .nav-bar .nav-center > ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .nav-bar .nav-right {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .nav-bar .nav-right input {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 450px) 
+  {
+    .nav-right form,
+    .nav-right span
+    {
+        display: none;
+    }
+  }
+
+/* *********************************************************************** */
+.main
+{
+    background-image: url(./loginimg/bg-login.webp);
+    width: 100vw;
+    height: 100vh;
+}
+.nain-login-card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.login-top
+{
+    background-color: #2EA3A3;
+    width: 33vw;
+}
+.login-top  p
+{
+    padding: 1.5rem  2rem;
+    font-size: 1rem;
+}
+.login-bottom 
+{
+    background-color: white;
+    width: 33vw;
+    text-align: center;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.login-bottom h1{
+    padding: 1rem 0rem;
+    font-family: serif;
+    font-weight: 200;
+    font-style: italic;
+
+}
+.login-bottom  p{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: #677477;
+}
+.login-bottom form input
+{
+    text-align: center;
+    padding: 1rem 5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+.login-bottom form input:hover{
+    border: 1px solid #A3DCDE;
+}
+.login-bottom form input::placeholder
+{
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.login-bottom button
+{
+    margin: 1.5rem;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: #00BDC3;
+    color: white;
+    letter-spacing: 0.2rem;
+    border: none;
+}
+.login-bottom button:hover
+{
+    cursor: pointer;
+    background-color: #A3DCDE;
+    color: black;
+    border: none;
+}
+@media (max-width: 768px) {
+    .login-top,
+    .login-bottom {
+      width: 90vw;
+    }
+  
+    .login-bottom form input {
+      padding: 1rem 3rem;
+    }
+  
+    .login-bottom button {
+      width: 12rem;
+      height: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-top p {
+      font-size: 0.9rem;
+      padding: 1rem 1.5rem;
+    }
+  
+    .login-bottom h1 {
+      font-size: 1.5rem;
+    }
+  
+    .login-bottom p {
+      font-size: 0.9rem;
+    }
+  
+    .login-bottom form input {
+      padding: 0.8rem 2.5rem;
+    }
+  
+    .login-bottom form input::placeholder {
+      font-size: 0.9rem;
+    }
+  
+    .login-bottom button {
+      width: 10rem;
+      height: 2.2rem;
+      font-size: 0.9rem;
+    }
+  }
