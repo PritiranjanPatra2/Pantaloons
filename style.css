@@ -236,7 +236,7 @@ main{
 }
 main .img{
     width: 100%;
-    height: aut0;
+    height: auto;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
