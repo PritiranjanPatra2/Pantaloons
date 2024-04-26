@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="order-tracking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <form>
+                <div class="search-option">
+                    <input type="radio" id="order-id" name="search-option" value="order-id" checked>
+                    <label for="order-id">Order ID/No</label>
+                    <input type="radio" id="tracking-id" name="search-option" value="tracking-id">
+                    <label for="tracking-id">Tracking ID/AWB</label>
+                </div>
+                <input type="text" placeholder="Enter Your Order ID/No" class="search-input">
+                <button type="submit" class="track-btn">Track Your Order</button>
+            </form>
+            <p class="status-text">Check current status of your shipment.</p>
+        </div>
+    </div>
+</body>
+</html>
