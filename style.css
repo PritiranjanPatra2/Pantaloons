@@ -14,6 +14,9 @@
 }
 
 /* top mav bar section start */
+/* div .top,nav{
+    overflow: hidden;
+} */
 .top {
     position: sticky;
     z-index: 6;
@@ -60,7 +63,7 @@
 .nav-bar {
     display: flex;
     position: sticky;
-    top: 1rem;
+    top:1rem;
     z-index: 5;
     justify-content: center;
     align-items: center;
@@ -116,6 +119,7 @@
    top:60px;
    visibility: visible;
     color: black;
+    z-index: 10;
    
 }
 .nav-center .lists .list1 ul{
@@ -226,43 +230,70 @@
 }
 
 /* main */
-main{
-    display: flex;
-    
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
+.carousel {
     position: relative;
-}
-main .img{
     width: 100%;
-    height: aut0;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    white-space: nowrap;
-  animation: scroll 10s linear infinite; 
-}
-@keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+    overflow: hidden;
   }
-main .img img{
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
     width: 100%;
-    height: 100%;
-}
-main p {
+  }
+  .slide img {
+    width: 100vw;
+  }
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+  }
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: #00b0b5;
+  }
+  .carousel p {
     background-color: rgb(253, 247, 121);
     text-align: center;
-    
-}
-main p a{
-    color:var(--black);
-}
+    position: relative;
+    bottom: 5px;
+  }
+  .carousel a {
+    color: black;
+  }
+  @media only screen and (max-width: 1070px) {
+    .carousel p {
+      font-size: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 857px) {
+    .carousel p {
+      font-size: 0.6rem;
+    }
+  }
+  @media only screen and (max-width: 648px) {
+    .carousel p {
+      font-size: 0.5rem;
+    }
+    .dots {
+      left: 40%;
+    }
+  }
+  @media only screen and (max-width: 539px) {
+    .carousel p {
+      font-size: 0.4rem;
+    }
+  }
 
 /* section-deals */
 .deals{
