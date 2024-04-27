@@ -545,44 +545,55 @@
           </div>
         </div>
       </div>
-    <div class="top-scrole-container">
-        <div>
-            <img src="./Men-images/2024-VacayEdit-D.jpg" alt="">
-            <img src="./Men-images/20240322-Byford-D.jpg" alt="">
-            <img src="./Men-images/20240322-Shirt Line Up-D.jpg" alt="">
-            <img src="./Men-images/202404-Loafers-D.jpg" alt="">
-            <img src="./Men-images/202404-Shrits and Trousers-D.jpg" alt="">
-            <img src="./Men-images/202404-SUMMERISHERE-D.jpg" alt="">
-        </div>
+  
 
-    </div>
+
     <!-- scrool bar section end -->
     <!-- thumbnail section start  -->
-    <div class="category-thumbnail-container">
-        <div>
-            <img src="./Men-images/s-img1.jpg" alt="">
-            <span>Vacy Edit'24</span>
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide">
+          <a href="">
+            <img src="./Men-images/2024-VacayEdit-D.jpg" alt="main" />
+            <p>
+              New User Offer - Get 10% Off on Min. Rs. 1599/-
+              (Code:&nbsp;<b>PTWELCOME10</b>) ; Get 10% Off , No Min. Purchase
+              Only on APP (code -&nbsp;<b>APPONLY</b>), TnC Apply!
+            </p>
+          </a>
         </div>
-        <div>
-            <img src="./Men-images/s-img2.jpg" alt="">
-            <span>T-shirts &amp; Polos</span>
+        <div class="slide">
+          <a href=""
+            ><img src="./Men-images/20240322-Byford-D.jpg" alt="main" />
+            <p>
+              New User Offer - Get 10% Off on Min. Rs. 1599/-
+              (Code:&nbsp;<b>PTWELCOME10</b>) ; Get 10% Off , No Min. Purchase
+              Only on APP (code -&nbsp;<b>APPONLY</b>), TnC Apply!
+            </p></a
+          >
         </div>
-        <div>
-            <img src="./Men-images/s-img3.jpg" alt="">
-            <span>Tracks &amp; Joggers</span>
+        <div class="slide">
+          <a href=""
+            ><img src="./Men-images/20240322-Shirt Line Up-D.jpg" alt="main" />
+            <p>
+              New User Offer - Get 10% Off on Min. Rs. 1599/-
+              (Code:&nbsp;<b>PTWELCOME10</b>) ; Get 10% Off , No Min. Purchase
+              Only on APP (code -&nbsp;<b>APPONLY</b>), TnC Apply!
+            </p></a
+          >
         </div>
-        <div>
-            <img src="./Men-images/s-img4.jpg" alt="">
-            <span>Shorts &amp; Chinos</span>
+        <div class="slide">
+          <a href=""
+            ><img src="./Men-images/202404-Loafers-D.jpg" alt="main" />
+            <p>
+              New User Offer - Get 10% Off on Min. Rs. 1599/-
+              (Code:&nbsp;<b>PTWELCOME10</b>) ; Get 10% Off , No Min. Purchase
+              Only on APP (code -&nbsp;<b>APPONLY</b>), TnC Apply!
+            </p></a
+          >
         </div>
-        <div>
-            <img src="./Men-images/s-img5.jpg" alt="">
-            <span>Tousers </span>
-        </div>
-        <div>
-            <img src="./Men-images/s-img6.jpg" alt="">
-            <span>Innerwear</span>
-        </div>
+      </div>
+      <div class="dots"></div>
     </div>
     <!-- thumbnail section end  -->
 
@@ -981,7 +992,45 @@
 
     
 
+     <script>
+      let slideIndex = 0;
 
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        if (index >= slides.length) {
+          slideIndex = 0;
+        }
+        const offset = -slideIndex * 100;
+        document.querySelector(
+          ".slider"
+        ).style.transform = `translateX(${offset}%)`;
+        dots.forEach((dot, i) => {
+          if (i === slideIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slide");
+        const dotsContainer = document.querySelector(".dots");
+        slides.forEach((slide, i) => {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if (i === 0) {
+            dot.classList.add("active");
+          }
+          dotsContainer.appendChild(dot);
+        });
+      });
+
+      setInterval(() => {
+        showSlide(++slideIndex);
+      }, 3000);
+    </script>
 
 </body>
 
