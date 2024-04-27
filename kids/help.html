@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .carousel {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .slide {
+        width: 100%;
+      }
+      .dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+      }
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      }
+
+      .dot.active {
+        background-color: #00b0b5;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="slider">
+        <div class="slide">
+          <a href=""
+            ><img src="./assets/2024-VacayEdit-Kids-D (1).jpeg" alt="main"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="./assets/202404-Keepin It Premium For Kids-D.jpeg"
+              alt="main"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img src="./assets/202404-Summer-time Faves-D.jpeg" alt="main"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img
+              src="./assets/202404-Just In From Pantaloons Baby-D.jpeg"
+              alt="main"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img src="./assets/202404-Track Pants-D.jpeg" alt="main"
+          /></a>
+        </div>
+        <div class="slide">
+          <a href=""
+            ><img src="./assets/202404-You Need Tees-D.jpeg" alt="main"
+          /></a>
+        </div>
+      </div>
+      <div class="dots"></div>
+    </div>
+    <script>
+      let slideIndex = 0;
+
+      function showSlide(index) {
+        const slides = document.querySelectorAll(".slide");
+        const dots = document.querySelectorAll(".dot");
+        if (index >= slides.length) {
+          slideIndex = 0;
+        }
+        const offset = -slideIndex * 100;
+        document.querySelector(
+          ".slider"
+        ).style.transform = `translateX(${offset}%)`;
+        dots.forEach((dot, i) => {
+          if (i === slideIndex) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slide");
+        const dotsContainer = document.querySelector(".dots");
+        slides.forEach((slide, i) => {
+          const dot = document.createElement("span");
+          dot.classList.add("dot");
+          if (i === 0) {
+            dot.classList.add("active");
+          }
+          dotsContainer.appendChild(dot);
+        });
+      });
+
+      setInterval(() => {
+        showSlide(++slideIndex);
+      }, 3000);
+    </script>
+  </body>
+</html>
