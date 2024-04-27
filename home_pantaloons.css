@@ -904,6 +904,8 @@
     
     height:500px;
    overflow:scroll; 
+   position: sticky;
+   top: 120px;
   }
   ::-webkit-scrollbar{
     width:12px;
