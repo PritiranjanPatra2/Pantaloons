@@ -186,6 +186,13 @@ li:hover .lists
   }
 }
 
+@media screen and (max-width:600px) {
+  .top,.nav-bar{
+    font-size: 12px;
+    align-content: start;
+    gap: 0;
+  }
+}
 /* @media only screen and (max-width: 1507px) {
   div .top,nav{
       overflow: hidden;

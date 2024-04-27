@@ -118,6 +118,13 @@
     color: white;
 }
 
+@media screen and (max-width:600px) {
+    .top,.nav-bar{
+      font-size: 12px;
+      align-content: start;
+      gap: 0;
+    }
+  }
 /* Styling the main section */
 main {
     padding-left: 9rem;

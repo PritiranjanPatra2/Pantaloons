@@ -61,6 +61,13 @@ body {
     color: #FFFFFF;
     /* padding: 0.5rem; */
 }
+@media screen and (max-width:600px) {
+    .top,.nav-bar{
+      font-size: 12px;
+      align-content: start;
+      gap: 0;
+    }
+  }
 
 .nav-bar .nav-left img {
     display: flex;
