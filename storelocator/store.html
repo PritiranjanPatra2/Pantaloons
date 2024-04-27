@@ -1,15 +1,39 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order Tracking</title>
-    <link rel="stylesheet" href="order-tracking.css">
-    <link rel="icon" type="image/x-icon" href="../Assets/title.jpeg">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="store.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
- 
+    <div class="top">
+        <div class="top-header-left">
+          <ul>
+            <li><a href="../greencard/green-card.html">GREEN CARD</a></li>
+            <li><a href="../giftcardPage/giftcard.html" target="_blank">GIFT CARD</a></li>
+            <li><a href="../storelocator/store.html">STORE LOCATOR</a></li>
+            <li><a href="../woman/order-tracking.html">TRACK ORDER</a></li>
+          </ul>
+        </div>
+        <div class="top-header-right">
+          <ul>
+            <li class="heading">ENTIRE COLLECTION</li>
+            <li>
+              <div class="sliding-button">
+                <input type="checkbox" id="toggle-button">
+                <label for="toggle-button"></label>
+              </div>
+            </li>
+            <li><span><i class="fa-solid fa-store"></i></span> STORE MODE</li>
+          </ul>
+        </div>
+      </div>
       <nav class="nav-bar">
         <div class="nav-left">
           <a href="../index.html"> <img
@@ -459,20 +483,36 @@
           <span><i class="fa-solid fa-cart-plus"></i></span>
         </div>
       </nav>
+  
     <div class="container">
-        <div class="search-box">
-            <form>
-                <div class="search-option">
-                    <input type="radio" id="order-id" name="search-option" value="order-id" checked>
-                    <label for="order-id">Order ID/No</label>
-                    <input type="radio" id="tracking-id" name="search-option" value="tracking-id">
-                    <label for="tracking-id">Tracking ID/AWB</label>
-                </div>
-                <input type="text" placeholder="Enter Your Order ID/No" class="search-input">
-                <button type="submit" class="track-btn">Track Your Order</button>
-            </form>
-            <p class="status-text">Check current status of your shipment.</p>
+        <div class="first" style="justify-content:left;">
+           <p style="text-align:start;"> <a href="/">Pantaloons</a>
+            <span> / </span>
+            <span class="store_text">Store Locator</span></p>
         </div>
+        <div class="second" >
+            Find a Pantaloons Store
+        </div>
+        <div class="location" style="text-align:left; padding-top:10px; font-size:15px;" >
+            Allow Device To Access Location!
+        </div>
+        <div>
+        <form>
+           <button type="submit" class="current" style="font-size:10px;">USE CURRENT LOCATION</button>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;or&nbsp;&nbsp;
+            <input type="text" name="search" id="search" placeholder="search by pincode or city/pincode/state" style="background-color:#ffff;padding:15px;">
+            <label for="search"></label>&nbsp;&nbsp;
+            <button type="submit" class="submit" style="font-size:12px;">Search</button>
+        </form>
+        </div>
+        <div class="map">
+            <div id="storeList">
+                No Stores
+             </div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929667.0932036685!2d78.11889230774108!3d15.879416767232813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3546f8ae93d47f%3A0x33d1bbbe95adcd83!2sAndhra%20Pradesh!5e0!3m2!1sen!2sin!4v1714129117201!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            </div>
+        
     </div>
+    
 </body>
 </html>
