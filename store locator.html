@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Locator</title>
+    <link rel="stylesheet" href="store locator.css">
+
+</head>
+<header>
+    <h1>Pantloons</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Beauty</a></li>
+        <li><a href="#">Brands</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search for more products..." style="color:black;">
+      <button class="btn-search">Search</button>
+    </div>
+  </header>
+<body>
+    <div class="container">
+        <div class="first" style="justify-content:left;">
+            <a href="/">Pantaloons</a>
+            <span> / </span>
+            <span class="store_text">Store Locator</span>
+        </div>
+        <div class="second" >
+            Find a Pantaloons Store
+        </div>
+        <div class="location" style="text-align:left; padding-top:10px; font-size:15px;" >
+            Allow Device To Access Location!
+        </div>
+        <div>
+        <form>
+           <button type="submit" class="current" style="font-size:10px;">USE CURRENT LOCATION</button>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;or&nbsp;&nbsp;
+            <input type="text" name="search" id="search" placeholder="search by pincode or city/pincode/state" style="background-color:#ffff;padding:15px;">
+            <label for="search"></label>&nbsp;&nbsp;
+            <button type="submit" class="submit" style="font-size:12px;">Search</button>
+        </form>
+        </div>
+        <div class="map">
+            <div id="storeList">
+                No Stores
+             </div>
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929667.0932036685!2d78.11889230774108!3d15.879416767232813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3546f8ae93d47f%3A0x33d1bbbe95adcd83!2sAndhra%20Pradesh!5e0!3m2!1sen!2sin!4v1714129117201!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            </div>
+        
+    </div>
+    
+</body>
+</html>
