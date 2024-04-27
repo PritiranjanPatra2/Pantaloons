@@ -517,7 +517,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     max-width: 100%;
     margin-bottom: 3rem;
 }
@@ -760,7 +760,7 @@ main {
     }
 
     .styles-image {
-        width: 350px;
+        width: 280px;
     }
 }
 
@@ -1279,7 +1279,7 @@ main {
     }
 
     .cards-container .card {
-        width: 18vw;
+        width: 15vw;
         height: 50vh;
     }
 
@@ -1312,10 +1312,10 @@ main {
 }
 .brands-wrapper p {
     letter-spacing: 1rem;
-    line-height: 1rem;
+    
     font-size: 1.3rem;
     font-family: 'Trirong', serif;
-    padding: 1rem;
+    padding:2rem 1rem;
     font-weight: 500;
 }
 .brand-names{
